@@ -1,0 +1,16 @@
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import Application from './components/application';
+import ExpensiveComponent from './components/expensive-component';
+
+import './index.css';
+
+const root = ReactDOM.createRoot(
+  document.getElementById('root') as HTMLElement,
+);
+
+root.render(
+  <React.StrictMode>
+    <Application MyComp={<ExpensiveComponent />}></Application>
+  </React.StrictMode>,
+);
